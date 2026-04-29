@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "К основному контенту" [ref=e3] [cursor=pointer]:
+      - /url: "#t-main-content"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e8]:
+          - button "Навигационное меню" [ref=e10] [cursor=pointer]
+          - link "Ярко" [ref=e18] [cursor=pointer]:
+            - /url: /landing_page
+            - generic [ref=e19]: Ярко
+        - generic [ref=e23]:
+          - button "Close menu" [ref=e24] [cursor=pointer]
+          - generic [ref=e28]:
+            - navigation [ref=e30]:
+              - list [ref=e31]:
+                - listitem [ref=e32]:
+                  - link "Панель управления" [ref=e33] [cursor=pointer]:
+                    - /url: /dashboard
+                - listitem [ref=e34]:
+                  - link "Управление заказами" [ref=e35] [cursor=pointer]:
+                    - /url: /orders
+                - listitem [ref=e36]:
+                  - link "Склад сырья" [ref=e37] [cursor=pointer]:
+                    - /url: /materials
+                - listitem [ref=e38]:
+                  - link "Склад упаковки" [ref=e39] [cursor=pointer]:
+                    - /url: /pack
+                - listitem [ref=e40]:
+                  - link "Задачи производства" [ref=e41] [cursor=pointer]:
+                    - /url: /production
+                - listitem [ref=e42]:
+                  - link "Склад продукции" [ref=e43] [cursor=pointer]:
+                    - /url: /products
+                - listitem [ref=e44]:
+                  - link "Сборка" [ref=e45] [cursor=pointer]:
+                    - /url: /assembling
+                - listitem [ref=e46]:
+                  - link "Доставки" [ref=e47] [cursor=pointer]:
+                    - /url: /delivery
+                - listitem [ref=e48]:
+                  - link "Отчеты" [ref=e49] [cursor=pointer]:
+                    - /url: /reports
+                - listitem [ref=e50]:
+                  - link "Настройки" [ref=e51] [cursor=pointer]:
+                    - /url: /settings
+            - generic [ref=e54]: © 2016 Your company
+    - generic [ref=e57]:
+      - link "Все" [ref=e69] [cursor=pointer]:
+        - /url: "#tab1"
+        - generic [ref=e71]: Все
+      - link "Производство" [ref=e73] [cursor=pointer]:
+        - /url: "#tab2"
+        - generic [ref=e75]: Производство
+      - link "Сборка" [ref=e77] [cursor=pointer]:
+        - /url: "#tab3"
+        - generic [ref=e79]: Сборка
+      - link "Доставка" [ref=e81] [cursor=pointer]:
+        - /url: "#tab4"
+        - generic [ref=e83]: Доставка
+      - generic [ref=e85]: Детали заказа
+      - link "+ Добавить заказ" [ref=e87] [cursor=pointer]:
+        - /url: "#popup:new_orders"
+        - generic [ref=e89]: + Добавить заказ
+      - generic [ref=e91]: Управление заказами
+    - generic [ref=e94]:
+      - generic [ref=e104]:
+        - generic [ref=e108]: Капитан
+        - generic [ref=e110]: "дата заказа: 16.03.25"
+      - generic [ref=e112]:
+        - generic [ref=e116]: Командор
+        - generic [ref=e118]: "дата заказа: 18.03.25"
+        - generic [ref=e122]: Производство
+      - generic [ref=e126]:
+        - generic [ref=e130]: Чикен
+        - generic [ref=e134]: Сборка
+        - generic [ref=e138]: Четкая дата
+        - generic [ref=e140]: "дата заказа: 20.03.25"
+      - generic [ref=e142]:
+        - generic [ref=e146]: Полет сервис
+        - generic [ref=e148]: "дата заказа: 24.03.25"
+        - generic [ref=e152]: Доставка
+      - generic [ref=e154]:
+        - generic [ref=e158]: Аэромил
+        - generic [ref=e160]: "дата заказа: 16.03.25"
+      - generic [ref=e162]:
+        - generic [ref=e166]: СФУ
+        - generic [ref=e170]: Производство
+        - generic [ref=e172]: "дата заказа: 24.03.25"
+      - generic [ref=e174]:
+        - generic [ref=e178]: Илим
+        - generic [ref=e182]: Доставка
+        - generic [ref=e184]: "дата заказа: 24.03.25"
+    - contentinfo [ref=e199]:
+      - generic [ref=e203]:
+        - img "Join our community to stay up to date with the latest news" [ref=e205]
+        - generic [ref=e206]: Join our community to stay up to date with the latest news
+        - generic [ref=e207]:
+          - link "Панель управления" [ref=e209] [cursor=pointer]:
+            - /url: /dashboard
+          - link "Управление заказами" [ref=e211] [cursor=pointer]:
+            - /url: /orders
+          - link "Склад сырья" [ref=e213] [cursor=pointer]:
+            - /url: /materials
+          - link "Склад упаковки" [ref=e215] [cursor=pointer]:
+            - /url: /pack
+          - link "Задачи производства" [ref=e217] [cursor=pointer]:
+            - /url: /production
+          - link "Склад продукции" [ref=e219] [cursor=pointer]:
+            - /url: /products
+          - link "Сборка" [ref=e221] [cursor=pointer]:
+            - /url: /assembling
+          - link "Доставка" [ref=e223] [cursor=pointer]:
+            - /url: /delivery
+          - link "Отчеты" [ref=e225] [cursor=pointer]:
+            - /url: /reports
+          - link "Настройки" [ref=e227] [cursor=pointer]:
+            - /url: /settings
+        - generic [ref=e229]:
+          - text: © All Rights Reserved. Yarko Co.
+          - link "info@yarko.ru" [ref=e230] [cursor=pointer]:
+            - /url: mailto:info@yarko.ru
+  - link "Made on Tilda" [ref=e232] [cursor=pointer]:
+    - /url: https://tilda.cc/
+    - generic [ref=e233]:
+      - generic [ref=e234]: Made on
+      - generic [ref=e236]: Tilda

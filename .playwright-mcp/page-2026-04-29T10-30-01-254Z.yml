@@ -1,0 +1,72 @@
+- generic [ref=e3]:
+  - banner [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - heading "Управление заказами" [level=1] [ref=e16]:
+        - text: Управление заказами
+        - generic [ref=e17]:
+          - link "Link to heading":
+            - /url: "#upravlenie-zakazami"
+            - img
+      - button "+ Добавить заказ" [ref=e22] [cursor=pointer]:
+        - paragraph [ref=e26]: + Добавить заказ
+    - generic [ref=e28]:
+      - generic [ref=e32]:
+        - radiogroup "button group" [ref=e35]:
+          - button "Все" [ref=e198] [cursor=pointer]:
+            - paragraph [ref=e202]: Все
+          - button "Производство" [ref=e203] [cursor=pointer]:
+            - paragraph [ref=e207]: Производство
+          - button "Сборка" [ref=e208] [cursor=pointer]:
+            - paragraph [ref=e212]: Сборка
+          - button "Доставка" [ref=e213] [cursor=pointer]:
+            - paragraph [ref=e217]: Доставка
+        - 'button "Капитан дата заказа: 16.03.25" [ref=e62] [cursor=pointer]':
+          - paragraph [ref=e66]:
+            - strong [ref=e67]: Капитан
+            - text: "дата заказа: 16.03.25"
+        - generic [ref=e71]:
+          - 'button "Командор дата заказа: 18.03.25" [active] [ref=e76] [cursor=pointer]':
+            - paragraph [ref=e80]:
+              - strong [ref=e81]: Командор
+              - text: "дата заказа: 18.03.25"
+          - generic [ref=e89]: Производство
+        - generic [ref=e91]:
+          - 'button "Чикен дата заказа: 20.03.25 · Четкая дата" [ref=e96] [cursor=pointer]':
+            - paragraph [ref=e100]:
+              - strong [ref=e101]: Чикен
+              - text: "дата заказа: 20.03.25 · Четкая дата"
+          - generic [ref=e109]: Сборка
+        - generic [ref=e111]:
+          - 'button "Полет сервис дата заказа: 24.03.25" [ref=e116] [cursor=pointer]':
+            - paragraph [ref=e120]:
+              - strong [ref=e121]: Полет сервис
+              - text: "дата заказа: 24.03.25"
+          - generic [ref=e129]: Доставка
+        - 'button "Аэромил дата заказа: 16.03.25" [ref=e136] [cursor=pointer]':
+          - paragraph [ref=e140]:
+            - strong [ref=e141]: Аэромил
+            - text: "дата заказа: 16.03.25"
+        - generic [ref=e145]:
+          - 'button "СФУ дата заказа: 24.03.25" [ref=e150] [cursor=pointer]':
+            - paragraph [ref=e154]:
+              - strong [ref=e155]: СФУ
+              - text: "дата заказа: 24.03.25"
+          - generic [ref=e163]: Производство
+        - generic [ref=e165]:
+          - 'button "Илим дата заказа: 24.03.25" [ref=e170] [cursor=pointer]':
+            - paragraph [ref=e174]:
+              - strong [ref=e175]: Илим
+              - text: "дата заказа: 24.03.25"
+          - generic [ref=e183]: Доставка
+      - generic [ref=e187]:
+        - generic [ref=e192]: Детали заказа
+        - generic [ref=e196]:
+          - generic [ref=e197]: Название
+          - generic [ref=e218]: Командор
+          - generic [ref=e219]: Дата заказа
+          - generic [ref=e220]: 18.03.25
+          - generic [ref=e221]: Статус
+          - generic [ref=e223]: Производство
+          - generic [ref=e224]: Четкая дата
+          - generic [ref=e225]: Нет
