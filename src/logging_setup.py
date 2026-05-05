@@ -5,6 +5,7 @@ import logging.config
 from typing import override
 import atexit
 import os
+from src.utils import TIMEZONE
 
 
 LOG_RECORD_BUILTIN_ATTRS = {
@@ -65,7 +66,7 @@ class MyJSONFormatter(logging.Formatter):
         always_fields = {
             "message": record.getMessage(),
             "timestamp": dt.datetime.fromtimestamp(
-                record.created, tz=os.getenv("TIMEZONE")
+                record.created, tz=TIMEZONE
             ).strftime("%Y-%m-%d %H:%M:%S"),
         }
         if record.exc_info is not None:

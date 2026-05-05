@@ -3,6 +3,7 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import as_declarative, declared_attr
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
+from sqlalchemy.pool import NullPool
 
 from src.utils.pascal_to_snake_case import pascal_to_snake_case
 
@@ -21,8 +22,8 @@ class BaseOrm:
         return pascal_to_snake_case(cls.__name__).replace("_orm", "")
 
 
-engine = create_engine(DATABASE_URL)
-async_engine = create_async_engine(ASYNC_DATABASE_URL)
+engine = create_engine(DATABASE_URL, echo=True)
+async_engine = create_async_engine(ASYNC_DATABASE_URL, poolclass=NullPool)
 async_session = async_sessionmaker(async_engine, class_=AsyncSession, expire_on_commit=False)
 
 

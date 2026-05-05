@@ -31,3 +31,6 @@ data/
 .qdrant/
 qdrant_storage/
 .claude
+.playwright-mcp/
+logs/
+docs/

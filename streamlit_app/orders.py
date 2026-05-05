@@ -148,7 +148,7 @@ with hcol1:
 with hcol2:
     st.write("")
     if st.button("+ Добавить заказ", type="primary", use_container_width=True):
-        st.session_state.show_add_form  = True
+        st.session_state.show_add_form = True
         st.session_state.selected_order = None
 
 st.write("")
