@@ -1,3 +1,10 @@
+import sys
+from pathlib import Path
+
+_root = str(Path(__file__).parent.parent)
+if _root not in sys.path:
+    sys.path.insert(0, _root)
+
 import streamlit as st
 
 CSS = """
@@ -62,8 +69,12 @@ h1 { font-size: 2rem !important; font-weight: 700 !important; color: #000 !impor
 
 .badge { display: inline-block; border-radius: 50px; padding: 3px 12px;
     font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
-.badge-warn { background: rgb(255,235,232); color: rgb(229,52,26); }
-.badge-ok   { background: rgb(238,255,230); color: rgb(56,180,28); }
+.badge-warn        { background: rgb(255,235,232); color: rgb(229,52,26); }
+.badge-ok          { background: rgb(238,255,230); color: rgb(56,180,28); }
+.badge-pending     { background: rgb(240,240,243); color: rgb(100,100,110); }
+.badge-in-progress { background: rgb(227,243,254); color: rgb(27,143,227); }
+.badge-stopped     { background: rgb(255,245,220); color: rgb(200,140,0); }
+.badge-completed   { background: rgb(238,255,230); color: rgb(56,180,28); }
 
 [data-testid="stToolbar"] { display: none !important; }
 [data-testid="stVerticalBlock"] > div { gap: 0 !important; }

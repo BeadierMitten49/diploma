@@ -8,12 +8,16 @@ from src.infrastructure.database.repositories.product import ProductRepository, 
 from src.infrastructure.database.repositories.craft import CraftRepository
 from src.infrastructure.database.repositories.defect_rate import DefectRateRepository
 from src.infrastructure.database.repositories.customer import CustomerRepository
+from src.infrastructure.database.repositories.employee import RoleRepository, EmployeeRepository
+from src.infrastructure.database.repositories.task import TaskRepository
 from src.application.raw_material import RawMaterialService
 from src.application.package import PackageService
 from src.application.product import ProductService
 from src.application.craft import CraftService
 from src.application.defect_rate import DefectRateService
 from src.application.customer import CustomerService
+from src.application.employee import RoleService, EmployeeService
+from src.application.task import TaskService
 
 
 def sync(coro):
@@ -58,3 +62,18 @@ def get_defect_rate_service() -> DefectRateService:
 @st.cache_resource
 def get_customer_service() -> CustomerService:
     return CustomerService(CustomerRepository(async_session))
+
+
+@st.cache_resource
+def get_role_service() -> RoleService:
+    return RoleService(RoleRepository(async_session))
+
+
+@st.cache_resource
+def get_employee_service() -> EmployeeService:
+    return EmployeeService(EmployeeRepository(async_session))
+
+
+@st.cache_resource
+def get_task_service() -> TaskService:
+    return TaskService(TaskRepository(async_session))
