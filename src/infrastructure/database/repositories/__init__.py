@@ -4,10 +4,14 @@ from .product import ProductRepository, PackagingRepository, ProductStockReposit
 from .craft import CraftRepository
 from .defect_rate import DefectRateRepository
 from .customer import CustomerRepository
+from .employee import RoleRepository, EmployeeRepository
+from .task import TaskRepository
 
 __all__ = [
     "PackageRepository", "PackageStockRepository",
     "RawMaterialRepository", "RawMaterialStockRepository",
     "ProductRepository", "PackagingRepository", "ProductStockRepository",
     "CraftRepository", "DefectRateRepository", "CustomerRepository",
+    "RoleRepository", "EmployeeRepository",
+    "TaskRepository",
 ]
